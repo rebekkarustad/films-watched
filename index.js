@@ -29,10 +29,6 @@ app.get("/results", function (req, res) {
           .find(".lister-item-header")
           .find("a")
           .text();
-        const year = $(this)
-          .find(".lister-item-content")
-          .find(".lister-item-year")
-          .text();
         const url = $(this).find("a").attr("href");
         const image = $(this)
           .find(".lister-item-image")
@@ -40,7 +36,6 @@ app.get("/results", function (req, res) {
           .attr("src");
         articles.push({
           title,
-          year,
           url,
           image,
         });

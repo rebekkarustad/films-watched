@@ -1,6 +1,6 @@
 const feedDisplay = document.querySelector("#feed");
 
-fetch("http://localhost:8000/results")
+fetch("https://untitled-oe68qi35pcal.runkit.sh/")
   .then((response) => {
     return response.json();
   })
